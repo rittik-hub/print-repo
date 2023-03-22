@@ -4,7 +4,6 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 from src.get_secrets import get_secret, get_tokens
-from src.widgets import Widgets
 
 
 class Sonarqube:
