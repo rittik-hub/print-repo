@@ -27,7 +27,7 @@ class Sonarqube:
             test_response = requests.get(self.sonarqube_url, auth=HTTPBasicAuth(username=self.token, password=''),
                                          params=params)
             issue_types[k] = test_response.json()['paging']['total']
-        return issue_types
+          print(issue_types)
 
     def severities_analysis(self):
         severities_types = {
@@ -44,5 +44,5 @@ class Sonarqube:
             test_response = requests.get(self.sonarqube_url, auth=HTTPBasicAuth(username=self.token, password=''),
                                          params=params)
             severities_types[k] = test_response.json()['paging']['total']
-        return severities_types
+         print(severities_types)
 
