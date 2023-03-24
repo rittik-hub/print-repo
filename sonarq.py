@@ -65,5 +65,5 @@ class Sonarqube:
             print(values)
             
      
-    severities_analysis()
+
 
