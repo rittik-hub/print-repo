@@ -41,7 +41,7 @@ class Sonarqube:
          
         
         
-    for values in issue_types.values():
+        for values in issue_types.values():
              print(values)
 
     def severities_analysis(self):
