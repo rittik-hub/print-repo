@@ -15,15 +15,13 @@ class Sonarqube:
         self.token = 'test'
         self.PARAM['buildname'] = build_name
         self.PARAM['statuses'] = 'OPEN'
-    
-    print(buildname)
+        print(buildname)
         
     def __init__(self, build_number):
         self.token = 'test'
         self.PARAM['buildnumber'] = build_number
         self.PARAM['statuses'] = 'OPEN'
-        
-    print(buildnumber)
+        print(buildnumber)
         
      
 
