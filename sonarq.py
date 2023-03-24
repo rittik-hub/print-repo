@@ -3,7 +3,6 @@ from copy import copy
 import requests
 from requests.auth import HTTPBasicAuth
 
-from src.get_secrets import get_secret, get_tokens
 
 
 class Sonarqube:
@@ -11,7 +10,7 @@ class Sonarqube:
     sonarqube_url = 'https://localhost:9000'
 
     def __init__(self, component_key):
-        self.token = get_tokens('test')
+        self.token = 'test'
         self.PARAM['componentKeys'] = component_key
         self.PARAM['statuses'] = 'OPEN'
 
