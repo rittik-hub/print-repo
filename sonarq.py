@@ -39,7 +39,7 @@ class Sonarqube:
                                          params=params)
             issue_types[k] = test_response.json()['paging']['total']
          
-        print(issue_types)
+        print(issue_types.values())
 
     def severities_analysis(self):
         severities_types = {
@@ -57,5 +57,5 @@ class Sonarqube:
                                          params=params)
             severities_types[k] = test_response.json()['paging']['total']
         
-        print(severities_types)
+        print(severities_types.values())
 
