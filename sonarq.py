@@ -9,10 +9,23 @@ class Sonarqube:
     PARAM = {'ps': '500'}
     sonarqube_url = 'https://localhost:9000'
 
-    def __init__(self, component_key):
+    
+        
+    def __init__(self, build_name):
         self.token = 'test'
-        self.PARAM['componentKeys'] = component_key
+        self.PARAM['buildname'] = build_name
         self.PARAM['statuses'] = 'OPEN'
+    
+    print(build_name)
+        
+    def __init__(self, build_number):
+        self.token = 'test'
+        self.PARAM['buildnumber'] = build_number
+        self.PARAM['statuses'] = 'OPEN'
+        
+    print(build_number)
+        
+     
 
     def issue_analysis(self):
         issue_types = {
