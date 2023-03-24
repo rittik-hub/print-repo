@@ -64,5 +64,6 @@ class Sonarqube:
         for values in severities_types.values():
             print(values)
             
-     severities_analysis()
+     
+    severities_analysis()
 
